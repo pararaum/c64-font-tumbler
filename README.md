@@ -37,6 +37,12 @@ EXPOSE 8080
 CMD ["npm", "run", "serve"]
 ```
 
+With the current configuration after a `docker build -t vue` running
+the container by `docker run --rm -p 8080:8080 vue` creates a web
+application running on localhost, port 8080. In order to develop: run
+with a different entrypoint but then the tools have to be installed in
+this directory... How to improve?
+
 ## Project setup
 ```
 npm install
